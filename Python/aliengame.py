@@ -68,11 +68,11 @@ while not done:
         print("You fainted of thirst and the aliens caught up! The aliens caught you and you lost the game.")
     if 8>tiredness>=5:
         print("You are tired.")
-    elif tiredness>8:
+    if tiredness>8:
         done=True
         print("You fell asleep while flying the UFO and the aliens caught up! The aliens caught you and you lost the game.")
     elif alienDistanceBehind<15:
         print("The aliens are getting close!")
-    elif milesTraveled>=200:
+    if milesTraveled>=200:
         done=True
         print ("You won!")
