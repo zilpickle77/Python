@@ -55,6 +55,12 @@ if playerwish=="F":
         print("X is equal to",x,"and",x2,".")
     if b**2-4*a*c==0.0:
         x=(-b/(2*a))
+        
         print("X is equal to",x)
     if b**2-4*a*c<0.0:
-        print("X is imaginary!")
+        """x=+"i"
+        (-b+math.sqrt(abs(b**2-4*a*c)))/(2*a)
+        x2=(-b-math.sqrt(b**2-4*a*c))/(2*a)"""
+        x=(-b/(2*a))
+        y=math.sqrt(abs(b**2-4*a*c))/(2*a)
+        print(str(x)+"+i"+str(y))
