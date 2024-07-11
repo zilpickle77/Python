@@ -41,19 +41,18 @@ for i in range(0,5):
         else:
             print("Someone's already here, try another position!!")
 
+    for k in gameboard:
+        print(k)
+
     if checkwin(gameboard,"X")==True:
         print("X won!")
-        for k in gameboard:
-            print
         break
 
     if checkwin(gameboard,"X")==False and checkwin(gameboard,"O")==False and i==4:
         print("TIEEEEEEEEE")
+        for k in gameboard:
+            print(k)
         break
-
-    
-    for k in gameboard:
-            print(k)    
 
     while True:
         player2Row=int(input("Player 2, you are O. What is the row that you would like to go? "))
@@ -64,6 +63,8 @@ for i in range(0,5):
             break
         else:
             print("Someone's already here, try another position!!")
+    for k in gameboard:
+        print(k)
 
     if checkwin(gameboard,"O")==True:
         print("O won!")
